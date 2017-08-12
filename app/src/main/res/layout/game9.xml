@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ 
+
+ <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/Game"
+     android:background="@color/background">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Play-9"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="130dp"
+        />
+
+<AbsoluteLayout android:id="@+id/GameField"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="75dp">
+
+    <Button android:id="@+id/Button00" android:layout_height="120px" android:layout_width="120px" android:layout_x="40px" android:layout_y="40px" android:text="0" android:textSize="50px" android:background="#000"></Button><Button android:id="@+id/Button01" android:layout_height="120px" android:layout_width="120px" android:layout_x="165px" android:layout_y="40px" android:text="1" android:textSize="50px"></Button>
+<Button android:id="@+id/Button02" android:layout_height="120px" android:layout_width="120px" android:layout_x="290px" android:layout_y="40px" android:text="2" android:textSize="50px"></Button>
+<Button android:id="@+id/Button03" android:layout_height="120px" android:layout_width="120px" android:layout_x="40px" android:layout_y="165px" android:text="3" android:textSize="50px"></Button>
+<Button android:id="@+id/Button04" android:layout_height="120px" android:layout_width="120px" android:layout_x="165px" android:layout_y="165px" android:text="4" android:textSize="50px"></Button>
+<Button android:id="@+id/Button05" android:layout_height="120px" android:layout_width="120px" android:layout_x="290px" android:layout_y="165px" android:text="5" android:textSize="50px"></Button>
+<Button android:id="@+id/Button06" android:layout_height="120px" android:layout_width="120px" android:layout_x="40px" android:layout_y="290px" android:text="6" android:textSize="50px"></Button>
+<Button android:id="@+id/Button07" android:layout_height="120px" android:layout_width="120px" android:layout_x="165px" android:layout_y="290px" android:text="7" android:textSize="50px"></Button>
+<Button android:id="@+id/Button08" android:layout_height="120px" android:layout_width="120px" android:layout_x="290px" android:layout_y="290px" android:text="8" android:textSize="50px"></Button>
+</AbsoluteLayout>
+
+    <TextView
+        android:layout_below="@+id/GameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MoveText"
+        android:textSize="28px"
+        android:text="@string/moves_title"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp">
+    </TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/MoveText"
+        android:id="@+id/FeedbackTitleText"
+        android:text="@string/feedback_title"
+        android:textSize="28px"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp">
+    </TextView>
+    <TextView
+        android:layout_below="@+id/GameField"
+        android:layout_toRightOf="@+id/MoveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MoveCounter"
+        android:text="0"
+        android:textSize="28px"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5px"
+        android:layout_alignBaseline="@+id/MoveText"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/FeedbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/FeedbackTitleText"
+        android:layout_alignBottom="@+id/FeedbackTitleText"
+        android:layout_alignParentRight="true"
+        android:text="@string/game_feedback_text"
+        android:textSize="28px"
+        android:textColor="@color/black"
+        android:layout_marginRight="300px"/>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/RelativeLayout01" 
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+ 
+ <ImageView 
+    android:layout_width="wrap_content" 
+    android:layout_height="0dp"
+    android:id="@+id/TitleImage"
+    android:background="@drawable/eightpuzzle" 
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="24px"
+    android:layout_gravity="center_horizontal"
+     android:layout_weight="1">
+  </ImageView>
+  
+<TextView 
+    android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:layout_below="@+id/TitleImage"
+     android:layout_centerHorizontal="true"
+     android:id="@+id/TitleText"
+     android:text="Puzzle"
+     android:textSize="48px"
+     android:typeface="sans"
+    android:textColor="@color/black"
+     android:layout_marginTop="24px"
+     android:layout_gravity="center_horizontal">
+      </TextView>
+
+    <Button style="@style/button"
+    android:layout_width="200dp" 
+    android:layout_height="wrap_content" 
+    android:text="Play"
+    android:layout_gravity="center"
+    android:id="@+id/play"/>
+    
+<Button style="@style/button"
+    android:layout_width="200dp" 
+    android:layout_height="wrap_content" 
+    android:text="Help"
+    android:layout_gravity="center"
+    android:id="@+id/help"/>
+      
+<Button style="@style/button"
+    android:layout_width="200dp" 
+    android:layout_height="wrap_content" 
+    android:text="About"
+    android:layout_gravity="center"
+    android:id="@+id/about"/>
+<Button style="@style/button"
+    android:layout_width="200dp" 
+    android:layout_height="wrap_content" 
+    android:text="Exit"
+    android:layout_gravity="center"
+    android:id="@+id/exit"/>
+</LinearLayout>

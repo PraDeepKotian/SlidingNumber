@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SlidingNumber</string>
+    <string name="play_button">Play</string>
+    <string name="exit">Exit</string>
+    <string name="feedback_title">Feedback: </string>
+    <string name="moves_title">Moves: </string>
+    <string name="game_feedback_text">No feedback yet!</string>
+    <string name="puzzle">The nice thing about doing a puzzle is, you know there is a solution.</string>
+    <string name="thank">Thank You!</string>
+</resources>
